@@ -1,3 +1,4 @@
+require('fs');
 var express = require('express');
 var app = express();
 var buffer = new Buffer(256);
