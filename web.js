@@ -1,14 +1,13 @@
 var fs = require('fs');
 var express = require('express');
 var app = express();
-var buffer = new Buffer(256);
+var buffer = new Buffer(fs.readFileSync("index.html");
 app.use(express.logger());
-
+var mystring = buffer.toString();
 
 
 app.get('/', function(request, response) {
-  buffer.write(fs.readFile('index.html'));
-  response.send(buffer.toString());
+  response.send(mystring);
 });
 
 
