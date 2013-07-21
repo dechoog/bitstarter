@@ -7,7 +7,7 @@ app.use(express.logger());
 
 
 app.get('/', function(request, response) {
-  buffer.write(fs.readFile('~/index.html'));
+  buffer.write(fs.readFile('index.html'));
   response.send(buffer.toString());
 });
 
